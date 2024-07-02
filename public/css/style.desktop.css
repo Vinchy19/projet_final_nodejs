@@ -1,0 +1,631 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html body{
+    background-color: rgb(243, 242, 239);
+    font-family: "Nanum Myeongjo", serif;
+}
+
+nav .en_tete {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    background-color: rgb(86, 85, 85);
+    font-family: "Nanum Myeongjo", serif;
+    position: relative;
+    height: 70px;
+}
+
+nav .en_tete .logo h1{
+    line-height: 70px;
+    padding: 0px 0px 0px 25px;
+    font-family: "Indie Flower", cursive;
+    color:white;
+}
+nav .en_tete ul {
+    display: flex;
+    /* gap: 25px; */
+    list-style: none;
+    line-height: 70px;
+}
+nav .en_tete ul li {
+    padding-right: 25px;
+}
+nav .en_tete ul li a{
+    text-decoration: none;
+    color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.head{
+    background: url(../images/pexels-alex-staudinger-829197-1732414.jpg) center center /cover;
+    background-blend-mode:multiply;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 600px;
+}
+
+.headcontent {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    padding-top: 150px;
+    color: white;
+    text-align: center;
+}
+
+.headcontent h1{
+    font-size: 50px;
+    max-width: 680px;
+    margin-bottom: 5px;
+}
+.icon{
+    color: #fff;
+    position: absolute;
+    right: 0;
+    margin-right: 25px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+  }
+.headcontent p{
+    display: flex;
+    text-align: center;
+    max-width: 780px;
+}
+
+.change-color{
+    color: rgb(221, 172, 37);
+}
+
+.section-card{
+    margin: 60px 0px 100px ;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+    justify-content: center;
+    align-items: center;
+}
+.cards img{
+    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 300px;
+    background: rgb(255, 255, 255);
+    box-shadow: 10px 10px 300px 15px rgba(43, 43, 43, 0.2);
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+.card .img{
+    width: 100%;
+    height: 250px;
+}
+
+.card:hover{
+    opacity: 87%;
+    transform: scale(1.03);
+}
+.ligne{
+    margin: 6px;
+    width: 15%;
+    height: 1px;
+    background-color: rgb(56, 56, 56);
+}
+.title1{
+    font-size: 18px;
+    margin: 90px 0px -30px 126px;
+}
+.title{
+    width: 99%;
+    margin: 20px 0px 20px 0px;
+}
+.ligne2{
+    width: 92%;
+    height: 1px;
+    margin: 0px 0px 30px 0px;
+    background-color: rgb(155, 155, 155);
+    opacity: 30%;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0px;
+}
+
+.description p{
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+.card-info{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.card-info img{
+    height: auto;
+    max-width: 50%;
+}
+.text{
+    width: 50%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: aliceblue;
+    background-color: rgb(41, 41, 41);
+}
+.text h2{
+    margin-bottom: 12px;
+}
+.photo {
+    height: 50%;
+    width: 50px;
+}
+.text p{
+    font-size: 14px;
+}
+
+.temoignages{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px 0px 0px;
+}
+
+.temoignages-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile {
+    margin:20px 0px 12px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.profile img{
+    clip-path: circle();
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
+
+.temoignages-card{
+    width: 100%;
+    padding: 2px 50px 0px 0px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    background-color: rgb(255, 255, 255);
+}
+.temoignages-card p{
+    margin: 30px -10px 10px 20px;
+    font-size: 11px;
+    max-width:500px ;
+}
+
+.temoignages-card .nom{
+    margin-bottom: -30px;
+    font-size: 11px;
+}
+
+.temoignages-card .titre{
+ font-size: 10px;
+ opacity: 70%;
+}
+
+.pied{
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: rgb(86, 85, 85);
+    color: aliceblue;
+}
+.titre1{
+    margin: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+.titre1 h2{
+    font-size: 55px;
+}
+.text1{
+    font-size: 20px;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.mar45{
+    margin: 45px 0px 0px 0px;
+    opacity: 50%;
+}
+.section-from {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0px 0px 100px 0px;
+    /* padding: 40px 50px ; */
+}
+.contactpage{
+    color: #fff;
+    background: url(../images/equipe/equipe_background.jpg) center /cover;
+    background-blend-mode:multiply;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 0px;
+    width: 100%;
+    height:auto ;
+    padding: 60px  0px;
+}
+.mar30{
+    margin: -10px 0px;
+}
+.mar20{
+    opacity: 90%;
+}
+
+.section-from .formulaire2{
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    padding: 30px 50px;
+    border: 1px solid rgba(255, 255, 255, 0.4);   
+    width: calc(100%-20px);
+    margin: 20px 60px;
+}
+.section-from .formulaire{
+    background-color: rgb(184, 143, 30);
+    border-radius: 20px;
+    padding: 30px 50px;
+    border: 1px solid rgba(255, 255, 255, 0.4);   
+    width: calc(100%-20px);
+    margin: 20px 60px;
+}
+.headform{
+    font-family: 'poppins';
+    color: white;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.headform1{
+    font-family: 'poppins';
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.ligne3{
+    width: 100%;
+    height: 1px;
+    margin: 0px 0px 30px 0px;
+    background-color: rgb(155, 155, 155);
+    opacity: 90%;
+}
+.ligne31{
+    width: 100%;
+    height: 1px;
+    margin: 0px 0px 30px 0px;
+    background-color: rgb(255, 255, 255);
+    opacity: 90%;
+}
+
+.section-from .formulaire .boite, .formulaire2 .boite{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 15px;    
+}
+
+.section-from .formulaire .boite label, .formulaire2 .boite label{
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    justify-self:center;
+}
+.section-from .formulaire2 .boite label{
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    justify-self:center;
+}
+.section-from .formulaire .boite input{
+    color: white;
+    background-color:rgba(253, 192, 60, 0.8);
+    margin-bottom: 16px;
+    padding: 12px 15px;
+    border-radius: 7px;
+    /* outline-color: rgba(255, 166, 0, 0,2); */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+.section-from .formulaire2 .boite input{
+    color: white;
+    background-color:rgba(0, 0, 0, 0.4);
+    margin-bottom: 16px;
+    padding: 12px 15px;
+    border-radius: 7px;
+    outline-color: rgba(255, 166, 0, 0,2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+.section-from .formulaire .boite #button, .formulaire2 .boite #button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-from .formulaire .boite button{
+    font-size: 18px;
+    color: white;
+    background-color:rgba(253, 192, 60, 0.8);
+    margin-bottom: 16px;
+    padding: 12px 15px;
+    border-radius: 7px;
+    outline: none;
+    outline-color: rgba(255, 166, 0, 0,2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.4s ease;
+}
+
+.section-from .formulaire2 .boite button{
+    /* width: 50%; */
+    font-size: 18px;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.4);
+    margin-bottom: 16px;
+    padding: 12px 15px;
+    border-radius: 7px;
+    outline-color: rgba(255, 166, 0, 0,2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.4s ease;
+}
+.section-from .formulaire .boite button:hover, .formulaire2 .boite button:hover{
+    background-color: #fff;
+    color: black;
+}
+.section-from .formulaire .boite textarea{
+    color: white;
+    background-color:rgba(253, 192, 60, 0.8);
+    margin-bottom: 6px;
+    padding: 12px 15px;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    outline-color: rgba(255, 166, 0, 0,1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    resize: none;
+}
+
+.section-from .formulaire2 .boite textarea{
+    color: white;
+    background-color:rgba(0, 0, 0, 0.3);
+    margin-bottom: 6px;
+    padding: 12px 15px;
+    border-radius: 7px;
+    border: none;
+    outline-color: rgba(255, 166, 0, 0,1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    resize: none;
+}
+.headbg{
+    background: url(../images/equipe/equipe2.jpg) center center /cover;
+    background-blend-mode:multiply;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 600px;
+    margin-bottom: 30px;
+}
+
+.headcontent {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    padding-top: 150px;
+    color: white;
+    text-align: center;
+}
+
+.headcontent h1{
+    font-size: 50px;
+    max-width: 680px;
+    margin-bottom: 5px;
+}
+
+.headcontent p{
+    display: flex;
+    text-align: center;
+    max-width: 780px;
+}
+.equipe{
+    margin: 0px 0px 60px 0px;
+}
+.team-title{
+    text-align: center;
+    position: relative;
+    margin: -2px 0px;
+}
+.equipecards
+{
+    width: 85%;
+    justify-content: space-between;
+    display: flex;
+    gap: 15px;
+    margin: 20px auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.equipecard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(214, 214, 214, 0.2);
+    border-radius: 27px;
+    padding: 30px 70px;
+    text-align: center;
+    transition: transform 0.2s ease;
+    width: calc(33.33%-20px);
+    box-shadow: 10px 10px 100px 20px rgba(44, 44, 44, 0.1);
+    cursor: pointer;
+}
+.equipecard:hover{
+    transform: translateY(-2%);
+}
+.team-image img{
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.team-detail{
+    text-align: center;
+}
+ .team-detail h3{
+    font-size: 20px;
+    margin: 10px 0px;
+ }
+ .team-detail p{
+    font-size: 18px;
+ }
+ .mar30 p{
+    font-size: 48px;
+    width: 90%;
+}
+.double{
+    width: 55%;
+}
+
+
+ /* La partie responsive */
+
+ @media screen and (max-width: 768px) {
+   #links {
+    display: none;
+    position: absolute;
+    gap: 0.5px;
+    top: 70px;
+    right: 0;
+    width: auto;
+    height: 97vh;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    padding: 0px 120px 20px 20px;
+    z-index: 1;
+    box-shadow: 10px 10px 300px 15px rgba(43, 43, 43, 0.2);
+  }
+    nav .en_tete ul li {
+        color: black;
+        margin-bottom: -25px;
+    }
+    nav .en_tete ul li a{
+        color: black;
+    }
+  .icon {
+    display: block;
+  }
+  #links.linkshow {
+    display: flex;
+  }
+
+  nav .icon{
+    display: block;
+    line-height: 70px;
+    /* margin: auto 20px; */
+  }
+   .headcontent{
+    height: 300px;
+   }
+   .text1{
+    width: 89%;
+    font-size: 12px;
+    text-align: center;
+   }
+
+   .titre1 h2{
+    font-size: 30px;
+    }
+    .title1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0px -40px;
+    }
+    .card-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* width: 90%; */
+    }
+    .card-info img{
+        display: none;
+    }
+    .text{
+        padding: 30px;
+        width: 100%;
+        /* height: auto; */
+    }
+    .text p{
+        font-size: 12px;
+        margin:0px 20px 10px 20px;
+    }
+    .text h2{
+        font-size: 18px;
+        margin:0px 20px 10px 20px;
+    }
+    .temoignages-cards{
+        width: 90%;
+    }
+    .double{
+        width: 90%;
+    }
+  
+    .section-from .formulaire2{
+        width:97%;
+    }
+    .mar30 p{
+        font-size: 28px;
+        width: 90%;
+    }
+    nav .en_tete ul li a{
+        font-size: 14px;
+    }
+    .cards .card {
+        width: 270px;
+    }
+    .cards .card .img {
+        height: 240px;
+    }
+    .headbg{
+        height: 500px;
+    }
+    .head{
+        height: 400px;
+    }
+    nav .en_tete .logo h1{
+        font-size: 21px;
+    }
+ }
